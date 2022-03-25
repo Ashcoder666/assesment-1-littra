@@ -1,0 +1,51 @@
+.right-body{
+    width: 50%; 
+}
+.data-header{
+    background-color: black;
+    color: white;
+    height:20px;
+    width:90%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: flex-start;
+    font-family: helvetica, arial, sans-serif;
+}
+
+.data-header span{
+    margin-right: 60px;
+    margin-left: 20px
+}
+
+
+.data-body{
+    background-color:white;
+    height:40px;
+    width:90%;
+    margin: 5px auto;
+    border: 1px black solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: helvetica, arial, sans-serif;
+}
+
+.data-body button {
+    background-color:white;
+    border: none;
+    color: red;
+}
+
+.clear-all-div{
+    position: relative;
+    bottom: -30px;
+    left: 100px;
+   
+}
+.clear-all-div button {
+    width:200px;
+    height:30px;
+    background-color:black;
+    color: white;
+
+}

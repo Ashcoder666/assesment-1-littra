@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './Components/Header/Header'
+import Left from './Components/LeftSide/Left';
+import Right from './Components/RightSide/Right';
 
 function App() {
+
+  const [data,setData] = React.useState([])
+
+  const fetchData = (fullName,age) =>{
+      setData([...data,{fullName,age}])
+  }
+  console.log(data)
+  
   return (
+    <>
+    <Header />
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Left fetchData={fetchData}/>
+      <Right data={data}/>
     </div>
+    </>
   );
 }
 
