@@ -37,9 +37,11 @@
 }
 
 .clear-all-div{
-    position: relative;
-    bottom: -30px;
-    left: 100px;
+    position: fixed;
+    bottom:20%;
+    right:18%;
+
+    
    
 }
 .clear-all-div button {
@@ -48,4 +50,12 @@
     background-color:black;
     color: white;
 
+}
+.box2{
+    height: 370px;
+    width: 420px;
+    border: 1px solid black;
+    margin: 150px auto 0 auto;
+    background-color:rgba(211, 211, 211, 0.651);
+    overflow-y: scroll;
 }

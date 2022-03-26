@@ -7,7 +7,7 @@ const Left = ({fetchData}) => {
   return (
     <div className="left-body">
 
-    <div className="box">
+    <div className="box1">
 
       <div className="left-inputs">
         

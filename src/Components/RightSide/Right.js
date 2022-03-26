@@ -5,7 +5,7 @@ const Right = ({data}) => {
   return (
     <div className="right-body">
 
-      <div className="box">
+      <div className="box2">
         <h1 style={{textAlign: 'center', fontFamily:'Helvetica'}} >Users</h1>
 
        <div>
