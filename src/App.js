@@ -11,7 +11,13 @@ function App() {
   const fetchData = (fullName,age) =>{
       setData([...data,{fullName,age}])
   }
-  console.log(data)
+ const clearSingleEmploye = (fullName)=>{
+   const newData = data.filter(emp=>emp.fullName !== fullName)
+   setData(newData)
+ }
+ const clearAll = ()=>{
+   setData([]);
+ }
   
   return (
     <>
@@ -19,7 +25,7 @@ function App() {
     <div className="App">
 
       <Left fetchData={fetchData}/>
-      <Right data={data}/>
+      <Right data={data} clearOne={clearSingleEmploye} clearAll={clearAll}/>
     </div>
     </>
   );

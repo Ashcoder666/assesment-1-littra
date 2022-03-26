@@ -1,7 +1,7 @@
 import React from 'react'
 import './right.css'
 
-const Right = ({data}) => {
+const Right = ({data,clearOne,clearAll}) => {
   return (
     <div className="right-body">
 
@@ -17,13 +17,13 @@ const Right = ({data}) => {
          <div className="data-body" key={item.fullName} >
            <span  >{item.fullName}</span>
            <span  >{item.age}</span>
-           <span><button>CLEAR</button></span>
+           <span><button onClick={()=>{clearOne(item.fullName)}} >CLEAR</button></span>
          </div> 
        ))}
        </div>
             
        <div className="clear-all-div">
-          <button>CLEAR ALL</button>
+          <button onClick={()=>clearAll()} >CLEAR ALL</button>
        </div>
 
       </div>
