@@ -14,10 +14,10 @@ const Right = ({data,clearOne,clearAll}) => {
          <span>Age</span>
        </div>
        {data.map(item=>(
-         <div className="data-body" key={item.fullName} >
+         <div className="data-body" key={item.id} >
            <span  >{item.fullName}</span>
            <span  >{item.age}</span>
-           <span><button onClick={()=>{clearOne(item.fullName)}} >CLEAR</button></span>
+           <span><button onClick={()=>{clearOne(item.id)}} >CLEAR</button></span>
          </div> 
        ))}
        </div>

@@ -7,12 +7,14 @@ import Right from './Components/RightSide/Right';
 function App() {
 
   const [data,setData] = React.useState([])
+  const [id,setId] = React.useState(0)
 
   const fetchData = (fullName,age) =>{
-      setData([...data,{fullName,age}])
+    setId(prev=>prev+1)
+      setData([...data,{fullName,age,id}])
   }
- const clearSingleEmploye = (fullName)=>{
-   const newData = data.filter(emp=>emp.fullName !== fullName)
+ const clearSingleEmploye = (id)=>{
+   const newData = data.filter(emp=>emp.id !== id)
    setData(newData)
  }
  const clearAll = ()=>{
